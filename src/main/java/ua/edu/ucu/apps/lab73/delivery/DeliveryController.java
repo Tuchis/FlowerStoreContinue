@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.lab73.payments;
+package ua.edu.ucu.apps.lab73.delivery;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RequestMapping("/api/v1/payments")
+@RequestMapping("/api/v1/delivery")
 @RestController
-public class PaymentController {
+public class DeliveryController {
     @GetMapping
-    public List<? extends Payment> getPayments() {
-        return List.of(new PayPalPayment());
+    public List<? extends Delivery> getdeliverys() {
+        return List.of(new DHLDeliveryStrategy());
     }
 }

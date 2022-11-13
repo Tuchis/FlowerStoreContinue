@@ -18,7 +18,9 @@ public class Order {
         this.delivery = delivery;
     }
     public void processOrder(){
-        System.out.println("Your items are " + this.items.toString() + "and price is " + this.calculateTotalPrice());
+        this.delivery.deliver(this.items);
+        this.payment.pay(this.calculateTotalPrice());
+        System.out.println("You have " + this.items.size() + " items and price is " + this.calculateTotalPrice());
     }
     public double calculateTotalPrice(){
         double price = 0;
