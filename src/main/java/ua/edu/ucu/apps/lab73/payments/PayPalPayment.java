@@ -1,8 +1,9 @@
 package ua.edu.ucu.apps.lab73.payments;
 
+import lombok.Getter;
 import lombok.Setter;
 
-@Setter
+@Setter @Getter
 public class PayPalPayment implements Payment{
     double balance = 0;
 
