@@ -5,7 +5,6 @@ public class Tulip extends Flower {
      * Tulip class.
      */
     public Tulip() {
-        super(FlowerColor.BLUE, 10, 10);
-        this.setColor(FlowerColor.BLUE);
+        super(1, "Blue", 10, 10);
     }
 }

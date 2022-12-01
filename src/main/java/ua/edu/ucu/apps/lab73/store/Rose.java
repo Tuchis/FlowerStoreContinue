@@ -5,7 +5,6 @@ public class Rose extends Flower {
      * Rose init.
      */
     public Rose() {
-        super(FlowerColor.RED, 10, 10);
-        this.setColor(FlowerColor.RED);
+        super(1, "Red", 10, 10);
     }
 }
