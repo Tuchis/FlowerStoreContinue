@@ -5,7 +5,6 @@ public class Chamomile extends Flower {
      * Chamomile class.
      */
     public Chamomile() {
-        super(FlowerColor.GREEN, 10, 10);
-        this.setColor(FlowerColor.BLUE);
+        super(1, "Green", 10, 10);
     }
 }

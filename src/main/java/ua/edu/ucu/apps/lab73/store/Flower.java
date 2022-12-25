@@ -2,14 +2,26 @@ package ua.edu.ucu.apps.lab73.store;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import ua.edu.ucu.apps.lab73.item.Item;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.util.Random;
+
 @Getter
 @Setter
+@Table
+@Entity
+@NoArgsConstructor
 @AllArgsConstructor
 public class Flower extends Item {
-    private FlowerColor color;
+    @Id @GeneratedValue
+    private int id ;
+    private String color;
     /**
      * Flower class.
      */
@@ -27,8 +39,18 @@ public class Flower extends Item {
      *
      * @return String
      */
-    public String getColor() {
-        return color.getColor();
-    }
+//    public Flower(String color, int sepalLength, double price){
+//        this.color = color;
+//        this.sepalLength = sepalLength;
+//        this.price = price;
+//    }
+
+//    public Flower() {
+//
+//    }
+
+//    public String getColor() {
+//        return this.color;
+//    }
 }
 

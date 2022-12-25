@@ -14,7 +14,7 @@ public class FlowerSpec {
     /**
      * FlowerColor.
      */
-    private FlowerColor color;
+    private String color;
     /**
      * FlowersTypes.
      */
@@ -26,7 +26,7 @@ public class FlowerSpec {
      * @return String
      */
     public String getColor() {
-        return color.getColor();
+        return this.color;
     }
 
     /**
@@ -36,7 +36,7 @@ public class FlowerSpec {
      * @param colorer
      * @param flowersTypeser
      */
-    public FlowerSpec(final int amounter, final FlowerColor colorer,
+    public FlowerSpec(final int amounter, final String colorer,
                       final List<String> flowersTypeser) {
         this.amount = amounter;
         this.color = colorer;
