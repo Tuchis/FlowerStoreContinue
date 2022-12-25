@@ -2,9 +2,9 @@ name: Java CI
 
 on:
   push:
-    branches: [master, main]
+    branches: [master, main, UCU]
   pull_request:
-    branches: [master, main]
+    branches: [master, main, UCU]
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
         env:
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: UCU
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVA_FILE_NAME: checkstyle.xml
       - name: Test with Maven
